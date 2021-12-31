@@ -1,0 +1,14 @@
+[package]
+name = "hello-wasm"
+version = "0.1.0"
+authors = ["Thibault <thibault.demasi@isen.yncrea.fr"]
+description = "A sample project with wasm-pack"
+license = "MIT/Apache-2.0"
+repository = "https://github.com/Shield-Factory/Website"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+wasm-bindgen = "0.2"

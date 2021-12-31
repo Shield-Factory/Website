@@ -16,6 +16,11 @@ import { VerifyEmailComponent } from './auth/verify-email/verify-email.component
 import {FormsModule} from '@angular/forms';
 import { ToastrModule } from 'ngx-toastr';
 import { ReactiveFormsModule } from '@angular/forms';
+import { AvailableVPNComponent } from './pages/available-vpn/available-vpn.component';
+import { TutorialComponent } from './pages/tutorial/tutorial.component';
+import { ProfilManagmentComponent } from './pages/profil-managment/profil-managment.component';
+import { EditAccountComponent } from './pages/edit-account/edit-account.component';
+
 
 
 
@@ -26,7 +31,11 @@ import { ReactiveFormsModule } from '@angular/forms';
     LoginComponent,
     RegisterComponent,
     ForgotPasswordComponent,
-    VerifyEmailComponent
+    VerifyEmailComponent,
+    AvailableVPNComponent,
+    TutorialComponent,
+    ProfilManagmentComponent,
+    EditAccountComponent,
   ],
   imports: [
     BrowserModule,

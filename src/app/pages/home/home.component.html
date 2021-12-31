@@ -23,7 +23,19 @@
                 <label>Created At:</label>
                 <input type="text" class="form-control" [value]="user.createdAt | date: 'short'" readonly />
               </div>
-              <div class="">
+              <div class="VPNavailable">
+                <button class="btn btn-primary btn-lg" [routerLink]="['/availableVPN']">Display VPN available</button>
+              </div>
+              <div class="OnlineTuto">
+                <button class="btn btn-primary btn-lg" [routerLink]="['/tutorial']">See Online tuto</button>
+              </div>
+              <div class="profilesManagment">
+                <button class="btn btn-primary btn-lg" [routerLink]="['/profileManagment']">Management of connection profiles</button>
+              </div>
+              <div class="editProfile">
+                <button class="btn btn-primary btn-lg" [routerLink]="['/editAccount']">Edit Account</button>
+              </div>
+              <div class="logout">
                 <button class="btn btn-danger btn-block" (click)="authService.logout()">Logout</button>
               </div>
             </div>

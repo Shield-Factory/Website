@@ -11,8 +11,6 @@ import { FormGroup,  FormBuilder,  Validators, FormControl } from '@angular/form
 export class RegisterComponent implements OnInit {
   email = '';
   password = '';
-  securePattern = "(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&].{8,}";
-  passwordSecu = new FormControl;
   constructor(
     private authService: AuthService
   ) { }

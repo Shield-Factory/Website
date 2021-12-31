@@ -46,20 +46,21 @@ export class AuthService {
   // Register user
   async userRegister(email: string, password: string): Promise<void> {
     await this.afAuth.createUserWithEmailAndPassword(email, password).then((res) => {
-     console.log('response from register: ', res);
-     this.toastr.success('User successfully registered. We sent you a verification mail please check your mail box', 'Success');
-     this.router.navigate(['/verify-email']);
-     /**
+      console.log('response from register: ', res);
+      this.toastr.success('User successfully registered. We sent you a verification mail please check your mail box', 'Success');
+      this.router.navigate(['/verify-email']);
+      /**
       * Now, calling sendVerificationMail() function
       * to send the verification email, after successful register.
       */
-     this.sendVerificationMail();
+      this.sendVerificationMail();
 
-   }).catch((err) => {
-     console.log('Error while login: ', err);
-     this.toastr.error(err.message, err.code);
-   });
- }
+      }).catch((err) => {
+      console.log('Error while login: ', err);
+      this.toastr.error(err.message, err.code);
+    });
+  }
+
 
  // Verification mail user
  async sendVerificationMail(): Promise<void> {
