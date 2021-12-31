@@ -28,7 +28,10 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 # Modules à installer
 
-Une fois dans le répertoire de travail :
-ng add @angular/fire
-npm install ngx-toastr --save
-ng add @angular-material-extensions/password-strength
+Une fois dans le répertoire de travail :  
+npm install  
+
+Si le compilateur trouve des modules non installées (ne devrait pas arrivé mais au cas où) :  
+ng add @angular/fire  
+npm install ngx-toastr --save  
+ng add @angular-material-extensions/password-strength  
